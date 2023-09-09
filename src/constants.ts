@@ -52,8 +52,9 @@ export const BOARDS = [
   { slug: 'ranked', name: 'Ranked', seasonsRange: [6, Infinity] },
   { slug: 'casual', name: 'Casual', seasonsRange: [15, Infinity] },
   { slug: 'warmup', name: 'Deathmatch', seasonsRange: [25, Infinity] },
+  { slug: 'standard', name: 'Standard', seasonsRange: [31, Infinity] },
   { slug: 'event', name: 'Event', seasonsRange: [16, Infinity] },
-  { slug: 'newcomer', name: 'Newcomer', seasonsRange: [12, Infinity] }
+  { slug: 'newcomer', name: 'Newcomer', seasonsRange: [12, 29] }
 ] as const satisfies readonly Board[];
 
 export const DEFAULT_APPLICATIONS = [
