@@ -1,3 +1,7 @@
+> [!IMPORTANT]
+>
+> # R6API.js won't be maintained in foreseeable future. The reasons are simple — [I](https://github.com/danielwerg)'ve pretty much lost the interest in players statistics which is core of this package and working with Ubisoft APIs is pain in an ass most of the time (as of launch of Heavy Mettle players stats endpoint is broken _again_). For most up to date version see [next branch](https://github.com/danielwerg/r6api.js/tree/next). A lot of things, such as assets and constants from this package was moved to my new package — [R6Data](https://github.com/danielwerg/r6data)
+
 <div align="center">
   <img src="https://i.imgur.com/Tet0qAn.png" alt="R6API.js logo" />
   <p>
