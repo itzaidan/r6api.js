@@ -374,9 +374,9 @@ Get user seasonal stats.
 <!-- prettier-ignore-start -->
 <!-- SEASONS_SHORT:START -->
 
-| ID   | Name          | ·   | ID   | Name             |
-| ---- | ------------- | --- | ---- | ---------------- |
-| `1`  | Black Ice     |     | `16` | Shifting Tides   |
+| ID   | Name          | ·   | ID   | Name             | ·   | ID   | Name         |
+| ---- | ------------- | --- | ---- | ---------------- | --- | ---- | ------------ |
+| `1`  | Black Ice     |     | `16` | Shifting Tides   |     | `31` | Heavy Mettle |
 | `2`  | Dust Line     |     | `17` | Void Edge        |
 | `3`  | Skull Rain    |     | `18` | Steel Wave       |
 | `4`  | Red Crow      |     | `19` | Shadow Legacy    |
@@ -390,7 +390,7 @@ Get user seasonal stats.
 | `12` | Wind Bastion  |     | `27` | Brutal Swarm     |
 | `13` | Burnt Horizon |     | `28` | Solar Raid       |
 | `14` | Phantom Sight |     | `29` | Commanding Force |
-| `15` | Ember Rise    |     |      |                  |
+| `15` | Ember Rise    |     | `30` | Dread Factor     |
 
 <!-- SEASONS_SHORT:END -->
 <!-- prettier-ignore-end-->
@@ -415,18 +415,19 @@ Get user seasonal stats.
 <!-- prettier-ignore-start -->
 <!-- BOARDS:START -->
 
-| Board                 | Minimum Season        |
-| --------------------- | --------------------- |
-| Ranked (`ranked`)     | Health (`6`)          |
-| Casual (`casual`)     | Ember Rise (`15`)     |
-| Deathmatch (`warmup`) | Demon Veil (`25`)     |
-| Event (`event`)       | Shifting Tides (`16`) |
-| Newcomer (`newcomer`) | Wind Bastion (`12`)   |
+| Board                 | Minimum Season        | Maximum Season          |
+| --------------------- | --------------------- | ----------------------- |
+| Ranked (`ranked`)     | Health (`6`)          | Current (`Infinity`)    |
+| Standard (`standard`) | Heavy Mettle (`31`)   | Current (`Infinity`)    |
+| Casual (`casual`)     | Ember Rise (`15`)     | Current (`Infinity`)    |
+| Deathmatch (`warmup`) | Demon Veil (`25`)     | Current (`Infinity`)    |
+| Event (`event`)       | Shifting Tides (`16`) | Current (`Infinity`)    |
+| Newcomer (`newcomer`) | Wind Bastion (`12`)   | Commanding Force (`29`) |
 
 <!-- BOARDS:END -->
 <!-- prettier-ignore-end-->
 
-> NOTE: Unranked uses casual's board
+> NOTE: For seasons before Heavy Mettle (31) Unranked uses casual's board, for Heavy Mettle onwards, use the Standard board
 
 ```ts
 await r6api.getUserSeasonal({
